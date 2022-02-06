@@ -1,17 +1,3 @@
-<html>
-<head>
-</head>
-<body>
-<h1  id="h1"> Bangkok post
-</h1>
-<p1 id="p1">We aim to be the best in the business of news and information in Thailand and the region, reaching out to the world.</p1>
-<h2 id="h2">vaccine tourism</h2>
-<p2 id="p2">Phuket's authorities have asked for permission to organise their own purchase of Covid-19 vaccines so
-   they can expedite their plans to reopen the resort island for international tourism. </p2>
-   <br>
-<button type="submit" name="button" id="bt1">Swap</button>
-<script>
-
 var x = document.getElementById("h1")
 x.addEventListener('click',showinformation.bind(event,x),false);
 var xd = document.getElementById("h2")
@@ -39,10 +25,3 @@ var temp = m1.innerHTML;
   m1.innerHTML=m2.innerHTML;
   m2.innerHTML = temp;
 }
-
-
-
-</script>
-
-</body>
-</html>
