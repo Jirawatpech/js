@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+   
+
+    <style>
+    @import url(https://fonts.googleapis.com/css?family=Roboto:100);
+
+    body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto, sans-serif;
+    background: linear-gradient(#8b9da9, #fff6e4)
+}
+
+
+    
+      .calcal{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Roboto, sans-serif;
+
+      }
+      .display{
+        background-color: inherit;
+        font-size: 30px;
+        color: rgba(0,0,0,0.5);
+        width: 205px;
+        height: 50px;
+        text-align: right;
+      }
+      .btn_num{
+        background-color: inherit;
+        color: rgba(0,0,0,0.5);
+        font-size: 30px;
+        text-align: center;
+        width: 50px;
+        height: 50px;
+      }
+      .btn_op{
+
+        background:rgba(255,255,255,0.2);
+        border-right: 0;
+        color: rgba(0,0,0,0.5);
+        font-size: 30px;
+        text-align: center;
+        width: 50px;
+        height: 50px;
+
+      }
+      .btn_half{
+        background-color: #e6e6e6;
+        font-size: 30px;
+        text-align: center;
+        width: 106px;
+        height: 50px;
+      }
+      .btn_big{
+        color: rgba(0,0,0,0.5);
+        background-color: #e6e6e6;
+        font-size: 30px;
+        text-align: center;
+        width: 212px;
+        height: 50px;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <div class="calcal">
+
+
+    <form name="calcu" >
+      <input type="text" name="text1" id="cal" value="0" class="display">
+       <br>
+       <input type="button" name="clear" value="C" class="btn_big" onclick="clr()">
+
+       <br>
+       <input type="button" name="seven" value="7" class="btn_num" onclick="validate('7')">
+       <input type="button" name="eight" value="8" class="btn_num" onclick="validate('8')">
+       <input type="button" name="nine" value="9" class="btn_num" onclick="validate('9')">
+       <input type="button" name="div" value="/" class="btn_op" onclick="validate('/')">
+       <br>
+       <input type="button" name="four" value="4" class="btn_num" onclick="validate('4')">
+       <input type="button" name="five" value="5" class="btn_num" onclick="validate('5')">
+       <input type="button" name="six" value="6" class="btn_num" onclick="validate('6')">
+       <input type="button" name="mul" value="x" class="btn_op" onclick="validate('*')">
+       <br>
+       <input type="button" name="one" value="1" class="btn_num" onclick="validate('1')">
+       <input type="button" name="two" value="2" class="btn_num" onclick="validate('2')">
+       <input type="button" name="three" value="3" class="btn_num" onclick="validate('3')">
+       <input type="button" name="minus" value="-" class="btn_op" onclick="validate('-')">
+       <br>
+       <input type="button" name="dot" value="." class="btn_num" onclick="validate('.')">
+       <input type="button" name="zero" value="0" class="btn_num" onclick="validate('0')">
+       <input type="button" name="answer" value="=" class="btn_op" onclick="ans()">
+       <input type="button" name="add" value="+" class="btn_op" onclick="validate('+')">
+      <br>
+      <input type="button" name="pow" value="^2" class="btn_op" onclick="fpow()">
+       <input type="button" name="sqrt" value="√" class="btn_op" onclick="fsqr()" >
+       <input type="button" name="log" value="log" class="btn_op" onclick="flog()">
+       <input type="button" name="mod" value="%" class="btn_op" onclick="validate('%')">
+
+
+    </form>
+</div>
+<script src="calcus.js"></script>
+  </body>
+</html>

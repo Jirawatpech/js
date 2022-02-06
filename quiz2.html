@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+
+    <title>Quiz</title>
+
+    <script>
+  function ok (form){
+    var ans=[1,4,1], sel=[];
+    var total = 3,score=0;
+
+      sel[0]=document.myform.q0.value;
+      sel[1]=document.myform.q1.value;
+      sel[2]=document.myform.q2.value;
+
+      for(i=0; i<= 3; i++) {
+          if(sel[i] == '')
+           {
+            alert('You missed question #' + (i+1));
+            return 0;
+          }
+          }
+
+    for (var i = 0; i < ans.length; i++) {
+      if(sel[i] == ans[i])
+        score ++;
+      else{}
+    }
+alert('Your Scored '+ score +' out of '+ total);
+
+  }
+    </script>
+
+
+  <body>
+    <div>
+
+
+    <header><img  > LFC NEWS </header>
+    <p ></p>
+
+
+    <h1>KOP quiz</h1>
+
+<div >
+
+  <form name="myform" >
+
+
+
+      <p1  >1.ผู้จัดการทีมคนล่าสุดคือใคร <br>
+        <input type="radio" name="q0" value="1">a. Klopp <br>
+        <input type="radio" name="q0"  value="2">b. Rodgers<br>
+        <input type="radio" name="q0"  value="3">c. Royhodgson<br>
+        <input type="radio" name="q0"  value="4">d. Dalglish<br><br>
+      </p1>
+      <p1 >2.ผู้ที่ยิงประตูได้เยอะที่สุด,<br>
+          <input type="radio" name="q1"  value="1" >a. Salah <br>
+          <input type="radio" name="q1"  value="2">b. Torres <br>
+          <input type="radio" name="q1"  value="3">c. Gerrard <br>
+          <input type="radio" name="q1"  value="4">d. Fowler <br>
+
+        </p1><br>
+        <p1 >3.ตราสโมสรลิเวอร์พูลคือสัตว์ชนิดไหน <img src="logolfc.jpg"width="50" ><br>
+          <input type="radio" name="q2" value="1")>a. นก <br>
+          <input type="radio" name="q2"  value="2">b. หงส์ <br>
+          <input type="radio" name="q2"  value="3">c. ห่าน <br>
+          <input type="radio" name="q2" value="4")>d. ไก่ <br>
+
+        </p1>
+
+        <input type="button" name="submit" value="Submit" onclick=ok() >
+</div>
+
+
+
+
+</form>
+
+  </body>
+
+  </head>
+</html>
